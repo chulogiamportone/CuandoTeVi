@@ -1,0 +1,638 @@
+@font-face {
+    font-family: "Abril";
+    src: local("?"), url("../fonts/abril-fatface/AbrilFatface-Regular.woff") format("woff"), url("../fonts/abril-fatface/AbrilFatface-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Monserrat";
+    src: local("?"), url("../fonts/Montserrat-Regular/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Old";
+    src: local("?"), url("../fonts/old_standard_tt/OldStandard-Regular.woff") format("woff"), url("../fonts/old_standard_tt/OldStandard-Regular.ttf") format("truetype");
+}
+
+/*Body */
+.body {
+    background-color: #FFFFFF;
+
+}
+
+
+
+/*Header */
+.header {
+    height: 0px;
+}
+
+/*BoxHeader */
+.boxheader {
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+    height: 100px;
+    color: #DAE8D0;
+}
+
+/*BoxTitle */
+.boxtitle {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.logoimg {
+    height: 100px;
+    margin-left: 12%;
+    margin-top: 2px;
+}
+
+/*BoxNavBar */
+.boxnavbar {
+    width: 45%;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+
+}
+
+.navbar-brand {
+    font-family: Monserrat;
+}
+
+.nav-link {
+    font-family: Monserrat;
+}
+
+/*Fin header */
+
+
+
+
+
+
+
+/*Main */
+/*Main 1*/
+.mainclass {
+    display: flex;
+    justify-content: space-between;
+    height: 680px;
+    background-image: url(../img/Ellipse\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    background-size: 60%;
+}
+
+.maintext {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+
+.text {
+    width: 85%;
+    margin-left: 10%;
+}
+
+.T3 {
+    height: 45px;
+    width: 30%;
+    background-color: #6C8765;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Old;
+}
+
+.T2 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 107.9%;
+    letter-spacing: 0.01em;
+    color: #6C8765;
+    font-family: Abril;
+}
+
+.T1 {
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 78px;
+    letter-spacing: 0.01em;
+    color: #6C8765;
+    font-family: Abril;
+}
+
+.TP {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.5%;
+    letter-spacing: 0.01em;
+    color: #6C8765;
+    width: 90%;
+    font-family: Monserrat;
+}
+
+.TB {
+    width: 173px;
+    height: 40px;
+    background: #6C8765;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 97.9%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Monserrat;
+    border-width: 0px;
+}
+
+.TB:hover {
+    background: #FFFFFF;
+    color: #6C8765;
+    border-color: #6C8765;
+    border: 2px solid;
+}
+
+.mainimage {
+    height: 550px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.heroimage {
+    margin-top: 110px;
+    height: 620px;
+    width: auto;
+    align-self: center;
+    border-radius: 30px;
+}
+
+
+/* fin Main 1*/
+
+
+
+
+/*Main 2*/
+.mainclass2 {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 500px;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    padding-left: 170px;
+    padding-right: 170px;
+    background-image: url(../img/muro-hormigon-gris-claro.jpg);
+    background-repeat: round;
+}
+
+.card-img {
+    width: 20%;
+    height: 274px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-self: center;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 20px;
+}
+
+.card-img:hover {
+    text-decoration: none;
+    background: #6C8765;
+
+}
+
+.cardimage {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.cardimg {
+    width: 40%;
+    height: 100px;
+    background-image: url(../img/Blob.png);
+    background-repeat: round;
+
+}
+
+.T4 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    color: #6C8765;
+    font-family: Old;
+}
+
+.card-img:hover .T4 {
+
+    color: #FFFFFF;
+
+}
+
+/*fin Main 2*/
+
+
+
+
+/*Main 3*/
+.mainclass3 {
+    display: flex;
+    justify-content: space-between;
+    height: 680px;
+    background-image: url(../img/main3.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: center;
+    background-size: contain;
+}
+
+.text3 {
+    margin-top: 25%;
+    width: 80%;
+}
+
+.maintext3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mainimage3 {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.heroimage3 {
+    height: 300px;
+    width: 60%;
+    align-self: center;
+}
+
+
+/*fin Main 3*/
+
+
+
+/*Main 4*/
+.mainclass4 {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    height: 680px;
+    width: 100%;
+    background-image: url(../img/muro-hormigon-gris-claro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.TB2 {
+    width: 300px;
+    height: 40px;
+    background: #6C8765;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 97.9%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: Monserrat;
+    border-width: 0px;
+}
+
+.TB2:hover {
+    background: #FFFFFF;
+    color: #6C8765;
+    border-color: #6C8765;
+    border: 2px solid;
+}
+
+
+.text4 {
+    margin-top: 17%;
+    margin-left: 25%;
+    width: 80%;
+}
+
+.maintext4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.mainimage4 {
+    margin-top: 60px;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.maini4 {
+    display: flex;
+    justify-content: center;
+
+    width: 40%;
+    flex-direction: column;
+}
+
+.card-img4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-self: center;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-image: url(../img/camino.jpeg);
+    background-size: cover;
+    
+}
+
+.card-img5 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-self: center;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-image: url(../img/Colgantes.jpeg);
+    background-size: cover;
+    
+}
+
+.card-img4:hover {
+    text-decoration: none;
+    
+
+
+}
+
+.card-img5:hover {
+    text-decoration: none;
+    
+
+}
+
+.image4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+.T44 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    color: #6C8765;
+    font-family: Old;
+    margin-top: 10px;
+}
+.TP1 {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.5%;
+    letter-spacing: 0.01em;
+    color: #6C8765;
+    width: 90%;
+    font-family: Monserrat;
+    margin-left: 15px;
+}
+.textm4 {
+
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.TB4 {
+    align-self: end;
+    width: 300px;
+    height: 40px;
+    background: #6C8765;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 97.9%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: Monserrat;
+    border-width: 0px;
+}
+.TB4:hover {
+    background: #FFFFFF;
+    color: #6C8765;
+    border-color: #6C8765;
+    border: 2px solid;
+}
+
+/*fin Main 4*/
+
+/*Footer*/
+.footerclass {
+    margin-top: 90px;
+    height: 500px;
+    width: 100%;
+    background-color: #6C8765;
+    
+}
+
+.footer {
+    height: 500px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerimg {
+    width: 25%;
+    margin-left: 150px;
+}
+
+.herofimage {
+    margin-top: 150px;
+    width: 60%;
+    height: auto;
+
+}
+
+.footertext {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.textfooter {
+    width: 33%;
+}
+
+.ultitle {
+    font-family: Monserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.list-a {
+    font-family: Monserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.list-a:hover {
+    color: #EFD7C2;
+    text-decoration: none;
+    
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 100%;
+    background-image: url(../img/muro-hormigon-gris-claro.jpg);
+    box-shadow: 0px 0px 0px 3px #6C8765;
+
+}
+
+.year {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.icons {
+    margin-right: 150px;
+
+}
+.icons:hover {
+    background-color: #EFD7C2;
+    
+
+}
+
+.F5 {
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6C8765;
+    height: 30px;
+    font-family: Monserrat;
+}
+.footer3 {
+   
+    height: 60px;
+    width: 100%;
+    
+}
+/* fin Footer*/
+
+
+
+
+/* rep*/
+.heroimage3 {
+    width: 70%;
+    height: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*terminos y condiciones */
+
+.mainclasst {
+    display: flex;
+    justify-content: space-between;
+    height: 680px;
+    background-image: url(../img/Ellipse\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    background-size: 60%;
+
+}
+
+.maintextt {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    align-self: flex-start;
+    width: 100%;
+}
+.mainclassv {
+    
+    height: 680px;
+    
+}
+.mainclassb {
+    display: flex;
+    justify-content: space-between;
+    height: 680px;
+    background-image: url(../img/main3b.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: center;
+    background-size: contain;
+
+}
+
+
