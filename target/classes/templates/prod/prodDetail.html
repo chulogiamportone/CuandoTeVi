@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layout/layoutprod :: head"></head>
+
+<body>
+	<div th:replace="layout/layoutprod :: header"></div>
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<form th:action="@{/Admin/init/save}" method="post" th:object="${producto}"
+					enctype="multipart/form-data">
+					<div class="form-group">
+						<h5 class="mb-3">Detalle Producto</h5>
+						<label for="title">T&iacute;tulo:</label>
+						<input type="text" th:field="*{nombre}" class="form-control mb-2" id="title" required
+							readonly></input>
+						<label for="description">Descripci&oacute;n:</label>
+						<input type="text" th:field="*{descripcion}" class="form-control mb-2" id="description" required
+							readonly></input>
+						<label for="price">Precio:</label>
+						<input type="text" th:field="*{Precio}" class="form-control mb-2" id="price" required readonly></input>
+						<label for="title">Imagen:</label> <br>
+						<img th:if="${producto.imagen}" class="rounded" style="max-width: 50%; "
+							th:src="@{'/Admin/init/uploads/' + ${producto.imagen}}" />
+					</div>
+					<a th:href="@{/Admin/init/cargarproductos}" class="btn btn-danger">Regresar</a>
+				</form>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</div>
+	<div th:replace="layout/layoutprod :: footer"></div>
+</body>
+
+</html>

@@ -1,46 +1,28 @@
 package gc._4.pr2.grupo1.entity;
-
-
-
-import java.util.HashSet;
-import java.util.Set;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.*;
 
 @Entity
 public class Productos {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
+	private int id;
 	
 	private String nombre;
-	private String Descripción;
+	private String descripcion;
 	private int Precio;
 	private String Disponibilidad;
-	private String categoría;
-	private String Ingredientes;
+	private String categoria;
+	private String imagen;
 	
-
-	@ManyToMany
-	@JoinTable(name = "Productos_Pedidos",	
-			joinColumns = {@JoinColumn(name = "productos_id")},
-			inverseJoinColumns = {@JoinColumn(name = "pedidos_id")})
-	private Set<Pedidos> Lista_PedidosP = new HashSet<>();
-
-	
-	
-	
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setId(int i) {
+		this.id = i;
 	}
 	public String getNombre() {
 		return nombre;
@@ -48,11 +30,11 @@ public class Productos {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getDescripción() {
-		return Descripción;
+	public String getDescripcion() {
+		return descripcion;
 	}
-	public void setDescripción(String descripción) {
-		Descripción = descripción;
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 	public int getPrecio() {
 		return Precio;
@@ -67,16 +49,19 @@ public class Productos {
 		Disponibilidad = disponibilidad;
 	}
 	public String getCategoría() {
-		return categoría;
+		return categoria;
 	}
 	public void setCategoría(String categoría) {
-		this.categoría = categoría;
+		this.categoria = categoría;
 	}
-	public String getIngredientes() {
-		return Ingredientes;
+	public String getImagen() {
+		return imagen;
 	}
-	public void setIngredientes(String ingredientes) {
-		Ingredientes = ingredientes;
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+	public Productos() {
+		super();
 	}
 	
 	
