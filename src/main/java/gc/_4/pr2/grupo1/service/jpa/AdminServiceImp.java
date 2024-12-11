@@ -12,6 +12,8 @@ public class AdminServiceImp implements IAdminService {
 
 	@Autowired
 	private AdminRepository repo;
+	
+	
 
 	@Override
 	public List<Admin> mostrarTodos() {
@@ -32,5 +34,9 @@ public class AdminServiceImp implements IAdminService {
 	public void eliminarPorId(int id) {
 		repo.deleteById(id);
 	}
+
+	
+	
+	
 
 }

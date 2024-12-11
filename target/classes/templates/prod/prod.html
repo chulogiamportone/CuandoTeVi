@@ -13,8 +13,6 @@
 					enctype="multipart/form-data">
 					<div class="form-group">
 						<h5 class="mb-3">Guardar Producto</h5>
-						<label for="id">Id:</label>
-						<input type="text" th:field="*{id}" class="form-control mb-2" id="id" required readonly></input>
 						<label for="name">Nombre:</label>
 						<input type="text" th:field="*{nombre}" class="form-control mb-2" id="name" required></input>
 						<label for="description">Descripci&oacute;n:</label>
@@ -26,7 +24,7 @@
 						<input type="file" name="file" class="mb-2" th:text="${producto.imagen}" required /> <br>
 					</div>
 					<button type="submit" class="btn btn-primary">Aceptar</button>
-					<a th:href="@{/Admin/init/cargarproductos}" class="btn btn-danger">Cancelar</a>
+					<a id="botonproductos" class="btn btn-danger">Cancelar</a>
 				</form>
 			</div>
 			<div class="col-sm-4"></div>

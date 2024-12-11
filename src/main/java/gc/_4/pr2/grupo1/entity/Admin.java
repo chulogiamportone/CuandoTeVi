@@ -13,6 +13,7 @@ public class Admin {
 	
 	private String user;
 	private String contraseña;
+	private String Role;
 	
 	public int getId() {
 		return id;
@@ -32,5 +33,12 @@ public class Admin {
 	public void setContraseña(String contraseña) {
 		this.contraseña = contraseña;
 	}
+	public String getRole() {
+		return Role;
+	}
+	public void setRole(String role) {
+		Role = role;
+	}
+	
 
 }

@@ -1,0 +1,93 @@
+@font-face {
+	font-family: "Abril";
+	src: local("?"), url("../fonts/abril-fatface/AbrilFatface-Regular.woff") format("woff"), url("../fonts/abril-fatface/AbrilFatface-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Monserrat";
+	src: local("?"), url("../fonts/Montserrat-Regular/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Old";
+	src: local("?"), url("../fonts/old_standard_tt/OldStandard-Regular.woff") format("woff"), url("../fonts/old_standard_tt/OldStandard-Regular.ttf") format("truetype");
+}
+
+
+/*fin Index*/
+
+/*Layout admin*/
+/*header admin*/
+
+.header-title{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+/*fin header admin*/
+
+
+/*footer*/
+.footer-title{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+
+/*fin footer admin*/
+
+
+/*LOGIN */
+.btn-login {
+	height: 40px;
+	width: 300px;
+	background-color: lightblue;
+}
+
+
+.user {
+	justify-content: center;
+	display: grid;
+}
+
+
+/*INPUTS LOGIN CORRECTOS*/
+.form-control {
+	border-radius: .5rem;
+	display: block;
+	width: 100%;
+	height: calc(2.25rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border: 1px solid #d1d3e2;
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/*INPUTS LOGIN INCORRECTOS*/
+.form_error {
+	border-radius: .5rem;
+	display: block;
+	width: 100%;
+	height: calc(2.25rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+	border: 3px solid red;
+}
+
+.popupc3 {
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	height: 15%;
+	background-color: #fff;
+	border: 2px solid #ddd;
+	padding: 20px;
+}
+
+/* fin LOGIN*/

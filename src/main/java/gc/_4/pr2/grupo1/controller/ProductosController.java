@@ -1,6 +1,7 @@
 package gc._4.pr2.grupo1.controller;
 
 import java.net.MalformedURLException;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -30,6 +32,12 @@ public class ProductosController {
 	
 	@Autowired
 	private IUploadFileService uploadFileService;
+	
+	@GetMapping("/listproductos")
+	@ResponseBody
+	public List<Productos> mostrarTodosProductos() {
+		return service.mostrarTodos();
+	}
 	
 	@GetMapping("cargarproductos")
 	public String listProductos(Model model) {

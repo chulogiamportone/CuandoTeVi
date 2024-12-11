@@ -16,8 +16,8 @@
 /*Body */
 .body {
 	background-color: #FFFFFF;
-
 }
+
 
 /*Layout main*/
 /*Header */
@@ -82,23 +82,46 @@
 
 /*Fin header */
 
+
 /*Footer*/
 .footerclass {
 	margin-top: 110px;
-	height: 330px;
+	height: 90%;
 	width: 100%;
 	background-color: #6C8765;
 }
 
-.footer {
-	height: 270px;
-	display: flex;
-	justify-content: space-around;
+@media (max-width: 760px) {
+	.footer {
+		height: 540px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 270px 1fr;
+		justify-content: space-around;
+	}
 }
 
-.footerimg {
-	width: 25%;
-	margin-left: 10%;
+@media (min-width: 760px) {
+	.footer {
+		height: 270px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 480px) {
+	.footerimg {
+		width: 70%;
+		margin-left: 3rem;
+	}
+}
+
+@media (min-width: 480px) {
+	.footerimg {
+		width: 70%;
+		margin-left: 6rem;
+	}
 }
 
 .herofimage {
@@ -116,16 +139,29 @@
 }
 
 .textfooter {
-	width: 33%;
+	padding-top: 3rem;
 }
 
-.ultitle {
-	font-family: Monserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 25px;
-	color: #FFFFFF;
+@media (max-width: 480px) {
+	.ultitle {
+		font-family: Monserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 10px;
+		line-height: 25px;
+		color: #FFFFFF;
+	}
+}
+
+@media (min-width: 480px) {
+	.ultitle {
+		font-family: Monserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 25px;
+		color: #FFFFFF;
+	}
 }
 
 .list-a {
@@ -142,25 +178,53 @@
 	text-decoration: none;
 }
 
-.footer2 {
-	display: flex;
-	justify-content: space-between;
-	height: 30px;
-	width: 100%;
-	background-image: url(../img/muro-hormigon-gris-claro.jpg);
-	box-shadow: 0px 0px 0px 3px #6C8765;
+@media (max-width: 380px) {
+	.footer2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		height: 70px;
+		width: 100%;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		box-shadow: 0px 0px 0px 3px #6C8765;
+	}
+}
+
+@media (min-width: 381px) and (max-width: 700px) {
+	.footer2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		height: 50px;
+		width: 100%;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		box-shadow: 0px 0px 0px 3px #6C8765;
+	}
+}
+
+@media (min-width: 701px) {
+	.footer2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		height: 30px;
+		width: 100%;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		box-shadow: 0px 0px 0px 3px #6C8765;
+	}
 }
 
 .year {
 	display: flex;
 	justify-content: space-around;
-	margin-left: 150px;
+	margin-left: 1rem;
 	vertical-align: middle;
 	margin-top: 10px;
 }
 
 .icons {
-	margin-right: 150px;
+	display: flex;
+	justify-content: center;
 }
 
 .icons:hover {
@@ -184,83 +248,66 @@
 /* fin Footer*/
 
 
-
-/*LOGIN */
-.btn-login {
-	height: 40px;
-	width: 300px;
-	background-color: lightblue;
-
-}
-
-
-.user {
-	justify-content: center;
-	display: grid;
-}
-
-
-/*INPUTS LOGIN CORRECTOS*/
-.form-control {
-	border-radius: .5rem;
-	display: block;
-    width: 100%;
-    height: calc(2.25rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-	border: 1px solid #d1d3e2;
-	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-}
-
-/*INPUTS LOGIN INCORRECTOS*/
-.form_error {
-	border-radius: .5rem;
-	display: block;
-    width: 100%;
-    height: calc(2.25rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-	border: 3px solid red;
-}
-.popupc3 {
-	position: fixed;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 40%;
-	height: 15%;
-	background-color: #fff;
-	border: 2px solid #ddd;
-	padding: 20px;
-
-
-}
-
-/* fin LOGIN*/
-
-
-
-/*Main */
+/*Index */
 /*Main 1*/
-.mainclass {
-	display: flex;
-	justify-content: space-between;
-	height: 680px;
-	background-image: url(../img/Ellipse\ 1.png);
-	background-repeat: no-repeat;
-	background-position: right;
-	background-position-y: bottom;
-	background-size: 60%;
+@media (max-width: 745px) {
+	.mainclass {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: space-between;
+		height: 680px;
+		background-image: url(../img/Ellipse\ 1.png);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-position-y: top;
+		background-size: 80%;
+	}
 }
 
-.maintext {
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	width: 100%;
+@media (min-width: 745px) and (max-width: 1050px) {
+	.mainclass {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		height: 720px;
+		background-image: url(../img/Ellipse\ 1.png);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-position-y: top;
+		background-size: 60%;
+	}
+}
+
+@media (min-width: 1051px) {
+	.mainclass {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		height: 720px;
+		background-image: url(../img/Ellipse\ 1.png);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-position-y: top;
+		background-size: 630px;
+	}
+}
+
+@media (max-width: 480px) {
+	.maintext {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		width: 100%;
+	}
+}
+
+@media (min-width: 481px) {
+	.maintext {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		width: 100%;
+	}
 }
 
 .text {
@@ -281,32 +328,26 @@
 	font-family: Old;
 }
 
-.T2 {
-	font-weight: 400;
-	font-size: 50px;
-	line-height: 107.9%;
-	letter-spacing: 0.01em;
-	color: #6C8765;
-	font-family: Abril;
+@media (max-width: 480px) {
+	.T1 {
+		font-weight: 400;
+		font-size: 50px;
+		line-height: 60px;
+		letter-spacing: 0.01em;
+		color: #6C8765;
+		font-family: Abril;
+	}
 }
 
-.T1 {
-	font-weight: 400;
-	font-size: 80px;
-	line-height: 78px;
-	letter-spacing: 0.01em;
-	color: #6C8765;
-	font-family: Abril;
-}
-
-.TP {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 156.5%;
-	letter-spacing: 0.01em;
-	color: #6C8765;
-	width: 90%;
-	font-family: Monserrat;
+@media (min-width: 481px) {
+	.T1 {
+		font-weight: 400;
+		font-size: 80px;
+		line-height: 78px;
+		letter-spacing: 0.01em;
+		color: #6C8765;
+		font-family: Abril;
+	}
 }
 
 .TB {
@@ -331,22 +372,53 @@
 	border: 2px solid;
 }
 
-.mainimage {
-	height: 550px;
-	width: 90%;
-	display: flex;
-	justify-content: center;
-
+@media (max-width: 900px) {
+	.mainimage {
+		display: none;
+	}
 }
 
-.heroimage {
-	margin-top: 110px;
-	height: 620px;
-	width: auto;
-	align-self: center;
-	border-radius: 30px;
+@media (min-width: 900px) {
+	.mainimage {
+		display: flex;
+		justify-content: center;
+		height: 400px;
+		width: 90%;
+		margin-top: 6rem;
+		justify-content: center;
+	}
 }
 
+@media (max-width: 480px) {
+	.heroimage {
+		display: flex;
+		margin-top: 110px;
+		height: 200px;
+		width: auto;
+		align-self: center;
+		border-radius: 30px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	.heroimage {
+		margin-top: 110px;
+		height: 300px;
+		width: auto;
+		align-self: center;
+		border-radius: 30px;
+	}
+}
+
+@media (min-width: 769px) {
+	.heroimage {
+		margin-top: 110px;
+		height: 450px;
+		width: auto;
+		align-self: center;
+		border-radius: 30px;
+	}
+}
 
 /* fin Main 1*/
 
@@ -354,21 +426,56 @@
 
 
 /*Main 2*/
-.mainclass2 {
-	display: flex;
-	justify-content: space-around;
-	align-content: center;
-	height: 500px;
-	margin-top: 80px;
-	margin-bottom: 90px;
-	padding-left: 170px;
-	padding-right: 170px;
-	background-image: url(../img/muro-hormigon-gris-claro.jpg);
-	background-repeat: round;
+@media (max-width: 500px) {
+	.mainclass2 {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: space-around;
+		grid-template-rows: 250px 1fr;
+		align-content: center;
+		padding-top: 80px;
+		padding-bottom: 90px;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		background-repeat: round;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+	.mainclass2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-around;
+		grid-template-rows: 250px 1fr;
+		align-content: center;
+		padding-top: 80px;
+		padding-bottom: 90px;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		background-repeat: round;
+	}
+}
+
+@media (min-width: 769px) {
+	.mainclass2 {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-content: space-around;
+		align-content: center;
+		height: 500px;
+		margin-top: 80px;
+		margin-bottom: 90px;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		background-repeat: round;
+	}
 }
 
 .card-img {
-	width: 20%;
+	width: 70%;
 	height: 274px;
 	display: flex;
 	justify-content: center;
@@ -383,7 +490,6 @@
 .card-img:hover {
 	text-decoration: none;
 	background: #6C8765;
-
 }
 
 .cardimage {
@@ -392,7 +498,6 @@
 	display: flex;
 	justify-content: center;
 	align-content: center;
-
 }
 
 .cardimg {
@@ -400,7 +505,6 @@
 	height: 100px;
 	background-image: url(../img/Blob.png);
 	background-repeat: round;
-
 }
 
 .T4 {
@@ -413,9 +517,7 @@
 }
 
 .card-img:hover .T4 {
-
 	color: #FFFFFF;
-
 }
 
 /*fin Main 2*/
@@ -427,7 +529,7 @@
 .mainclass3 {
 	display: flex;
 	justify-content: space-between;
-	height: 680px;
+	height: 600px;
 	background-image: url(../img/main3.png);
 	background-repeat: no-repeat;
 	background-position: left;
@@ -435,9 +537,25 @@
 	background-size: contain;
 }
 
-.text3 {
-	margin-top: 25%;
-	width: 80%;
+.mainimage3 {
+	height: 550px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 900px) {
+	.mainimage3 {
+		display: none;
+	}
+}
+
+@media (min-width: 901px) {
+	.heroimage3 {
+		height: 300px;
+		width: 60%;
+		align-self: center;
+	}
 }
 
 .maintext3 {
@@ -446,39 +564,99 @@
 	width: 100%;
 }
 
-.mainimage3 {
-	height: 550px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-
+.text3 {
+	margin-top: 25%;
+	width: 80%;
 }
 
-.heroimage3 {
-	height: 300px;
-	width: 60%;
-	align-self: center;
+.T2 {
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 107.9%;
+	letter-spacing: 0.01em;
+	color: #6C8765;
+	font-family: Abril;
 }
 
+.TP {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 156.5%;
+	letter-spacing: 0.01em;
+	color: #6C8765;
+	width: 90%;
+	font-family: Monserrat;
+	margin-top: 1.5rem;
+}
 
 /*fin Main 3*/
 
 
 
 /*Main 4*/
-.mainclass4 {
-	margin-top: 90px;
+
+@media (max-width: 700px) {
+	.mainclass4 {
+		margin-top: 90px;
+		padding: 2rem;
+		justify-content: space-between;
+		width: 100%;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: 400px 1fr;
+		gap: 10px;
+		height: 1300px;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 968px) {
+	.mainclass4 {
+		margin-top: 90px;
+		padding: 2rem;
+		justify-content: space-between;
+		width: 100%;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: 400px 1fr;
+		gap: 10px;
+		height: 900px;
+	}
+}
+
+@media (min-width: 969px) {
+	.mainclass4 {
+		margin-top: 90px;
+		padding: 2rem;
+		justify-content: space-between;
+		width: 100%;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 400px 1fr;
+		gap: 10px;
+	}
+}
+
+.maintext4 {
 	display: flex;
-	justify-content: space-between;
-	height: 680px;
+	justify-content: center;
 	width: 100%;
-	background-image: url(../img/muro-hormigon-gris-claro.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+}
+
+.text4 {
+	align-content: center;
 }
 
 .TB2 {
-	width: 300px;
+	width: 16rem;
 	height: 40px;
 	background: #6C8765;
 	border-radius: 8px;
@@ -499,35 +677,51 @@
 	border: 2px solid;
 }
 
-
-.text4 {
-	margin-top: 17%;
-	margin-left: 25%;
-	width: 80%;
+@media (max-width: 700px) {
+	.mainimage4 {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: 420px 1fr;
+		justify-content: space-around;
+		border-radius: 20px 20px 0px 0px;
+		object-fit: cover;
+	}
 }
 
-.maintext4 {
-	display: flex;
-	justify-content: center;
-	margin-top: 150px;
-	width: 100%;
+@media (min-width: 701px) {
+	.mainimage4 {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		border-radius: 20px 20px 0px 0px;
+		object-fit: cover;
+	}
 }
 
-.mainimage4 {
-	margin-top: 60px;
-	height: 550px;
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
+@media (max-width: 700px) {
+	.maini4 {
+		display: flex;
+		justify-content: center;
+		height: 400px;
+		flex-direction: column;
+		width: 90%;
+		box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.3);
 
+		border-radius: 20px 20px 20px 20px;
+	}
 }
 
-.maini4 {
-	display: flex;
-	justify-content: center;
-
-	width: 40%;
-	flex-direction: column;
+@media (min-width: 701px) {
+	.maini4 {
+		display: flex;
+		justify-content: center;
+		height: 400px;
+		flex-direction: column;
+		width: 40%;
+		box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.3);
+		border-radius: 20px 20px 20px 20px;
+	}
 }
 
 .card-img4 {
@@ -541,9 +735,12 @@
 	background: #FFFFFF;
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 	border-radius: 20px;
-	background-image: url(../img/camino.jpeg);
 	background-size: cover;
+	background-image: url(../img/camino.jpeg);
+}
 
+.card-img4:hover {
+	text-decoration: none;
 }
 
 .card-img5 {
@@ -557,22 +754,12 @@
 	background: #FFFFFF;
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 	border-radius: 20px;
-	background-image: url(../img/Colgantes.jpeg);
 	background-size: cover;
-
-}
-
-.card-img4:hover {
-	text-decoration: none;
-
-
-
+	background-image: url(../img/Colgantes.jpeg);
 }
 
 .card-img5:hover {
 	text-decoration: none;
-
-
 }
 
 .image4 {
@@ -580,35 +767,6 @@
 	height: 100%;
 	display: flex;
 	justify-content: end;
-
-}
-
-.T44 {
-	text-align: center;
-	font-weight: 700;
-	font-size: 25px;
-	line-height: 31px;
-	color: #6C8765;
-	font-family: Old;
-	margin-top: 10px;
-}
-
-.TP1 {
-
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 156.5%;
-	letter-spacing: 0.01em;
-	color: #6C8765;
-	width: 90%;
-	font-family: Monserrat;
-	margin-left: 15px;
-}
-
-.textm4 {
-
-	border-radius: 8px;
-	background-color: #ffffff;
 }
 
 .TB4 {
@@ -634,25 +792,137 @@
 	border: 2px solid;
 }
 
+.textm4 {
+	border-radius: 8px;
+	background-color: #ffffff;
+	border-radius: 0px 0px 20px 20px;
+	box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.3);
+}
+
+.T44 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 31px;
+	color: #6C8765;
+	font-family: Old;
+	margin-top: 10px;
+}
+
+.TP1 {
+	text-align-last: end;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 156.5%;
+	letter-spacing: 0.01em;
+	color: #6C8765;
+	width: 90%;
+	font-family: Monserrat;
+	margin-left: 15px;
+}
+
 /*fin Main 4*/
 
 
 
+/*Productos*/
+@media (max-width: 480px) {
+	.mainclassp {
+		margin-top: 90px;
+		padding: 2rem;
+		justify-content: space-between;
+		width: 100%;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: 400px 1fr;
+		gap: 10px;
+	}
+}
 
-
-
-/* rep*/
-.heroimage3 {
-	width: 70%;
-	height: 70%;
+@media (min-width: 481px) and (max-width: 680px) {
+	.mainclassp {
+		margin-top: 90px;
+		padding: 2rem;
+		justify-content: space-between;
+		width: 100%;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 400px 1fr;
+		gap: 10px;
+	}
 }
 
 
+@media (min-width: 681px) {
+	.mainclassp {
+		margin-top: 90px;
+		padding: 2rem;
+		justify-content: space-between;
+		width: 100%;
+		background-image: url(../img/muro-hormigon-gris-claro.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 400px 1fr;
+		gap: 10px;
+	}
+}
 
+.mainip {
+	display: flex;
+	justify-content: center;
+	height: 400px;
+	flex-direction: column;
+}
 
+.mainimagep {
+	margin-top: 60px;
+	height: 250px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 20px 20px 0px 0px;
+	object-fit: cover;
+}
 
+.textmp {
+	border-radius: 8px;
+	background-color: #ffffff;
+	border-radius: 0px 0px 20px 20px;
+	box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.3);
+}
 
+.T44p {
+	text-align: center;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 31px;
+	color: #6C8765;
+	font-family: Old;
+	margin-top: 10px;
+}
 
+.TP1p {
+	text-align-last: end;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 156.5%;
+	letter-spacing: 0.01em;
+	color: #6C8765;
+	width: 90%;
+	font-family: Monserrat;
+	margin-left: 15px;
+}
+
+/*fin productos*/
 
 
 
@@ -668,7 +938,6 @@
 	background-position: right;
 	background-position-y: bottom;
 	background-size: 60%;
-
 }
 
 .maintextt {
@@ -680,9 +949,7 @@
 }
 
 .mainclassv {
-
 	height: 680px;
-
 }
 
 .mainclassb {
@@ -694,5 +961,4 @@
 	background-position: right;
 	background-position-y: center;
 	background-size: contain;
-
 }

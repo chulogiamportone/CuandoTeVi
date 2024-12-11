@@ -25,5 +25,18 @@ public class AdminController {
 	public List<Admin> mostrarTodosFactura() {
 		return service.mostrarTodos();
 	}
+/*
+	@Autowired
+    private AuthenticationManager authenticationManager;
 
+    @PostMapping("/Admin")
+    public String login(@RequestBody Admin admin) {
+        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(admin.getUser(), admin.getContraseña());
+        Authentication authentication = authenticationManager.authenticate(authenticationToken);
+        if (authentication.isAuthenticated()) {
+            return "Login exitoso";
+        } else {
+            return "Login fallido";
+        }
+    }*/
 }
