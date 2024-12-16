@@ -4,7 +4,7 @@
       "src": "/",
       "use": "@vercel/build-spring-boot",
       "config": {
-        "mainClass": "com.example.MySpringBootApplication"
+        "mainClass": "gc._4.pr2.grupo1"
       }
     }
   ]
