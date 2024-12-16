@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layout/layoutprod :: head"></head>
+<head th:replace="~{layout/layoutprod :: head}"></head>
 
 <body>
-	<div th:replace="layout/layoutprod :: header"></div>
+	<div th:replace="	~{layout/layoutprod :: header}"></div>
 	<div class="container">
 		<div class="row mb-8" style="justify-content: center;">
 			
@@ -30,7 +30,7 @@
 			
 		</div>
 	</div>
-	<div th:replace="layout/layoutprod :: footer"></div>
+	<div th:replace="	~{layout/layoutprod :: footer}"></div>
 </body>
 
 </html>

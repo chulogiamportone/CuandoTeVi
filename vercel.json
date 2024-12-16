@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "/",
+      "use": "@vercel/build-spring-boot",
+      "config": {
+        "mainClass": "com.example.MySpringBootApplication"
+      }
+    }
+  ]
+}

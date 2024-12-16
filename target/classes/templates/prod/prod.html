@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layout/layoutprod :: head"></head>
+<head th:replace="~{layout/layoutprod :: head}"></head>
 
 <body>
-	<div th:replace="layout/layoutprod :: header"></div>
+	<div th:replace="	~{layout/layoutprod :: header}"></div>
 	<div class="container">
 		<div class="row mb-5">
 			<div class="col-sm-4"></div>
@@ -24,13 +24,13 @@
 						<input type="file" name="file" class="mb-2" th:text="${producto.imagen}" required /> <br>
 					</div>
 					<button type="submit" class="btn btn-primary">Aceptar</button>
-					<a id="botonproductos" class="btn btn-danger">Cancelar</a>
+					<a th:href="@{/Admin/init/cargarproductos}" class="btn btn-danger">Cancelar</a>
 				</form>
 			</div>
 			<div class="col-sm-4"></div>
 		</div>
 	</div>
-	<div th:replace="layout/layoutprod :: footer"></div>
+	<div th:replace="	~{layout/layoutprod :: footer}"></div>
 </body>
 
 </html>

@@ -22,15 +22,19 @@ const validar = (e) => { //arrow function para validar datos
 
 async function avanzar() {
 
-	const response = await fetch('/Adminget', {
-		method: 'GET',
+	const response = fetch('/Admin', {
+		method: 'POST',
 		headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
 	});
+	/*
 	let validaduyc = false;
-
+	alert(response.json);
+	console.log(response);
+	alert(JSON.parse((await response.text()).toString()));
 	const admins = (JSON.parse((await response.text()).toString()));
+	alert(admins);
 	console.log(admins);
-	;
+	
 	for (let admin of admins) {
 		if (admin.user == document.getElementById("mail").value && admin.contraseña == document.getElementById("contraseña").value) {
 			validaduyc = true;
@@ -40,7 +44,7 @@ async function avanzar() {
 	}
 	alert(validaduyc);
 	validaduyc == true ? (location.href = "/Admin/init/cargarproductos"): mostrarPopup2();
-
+*/
 }
 
 

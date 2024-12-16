@@ -2,12 +2,12 @@
 
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layout/layoutmain :: head"></head>
+<head th:replace="~{layout/layoutmain :: head}"></head>
 <!-- Esto es un comentario -->
 
 <body class="body">
 
-	<div th:replace="layout/layoutmain :: header"></div>
+	<div th:replace="	~{layout/layoutmain :: header}"></div>
 	<main>
 		<div class="mainclass">
 			<div class="maintext">
@@ -102,7 +102,7 @@
 				</div>
 			</div>
 	</main>
-	<div th:replace="layout/layoutmain :: footer"></div>
+	<div th:replace="	~{layout/layoutmain :: footer}"></div>
 </body>
 
 </html>

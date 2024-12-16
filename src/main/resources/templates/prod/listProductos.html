@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="layout/layoutprod :: head"></head>
+<head th:replace="	~{layout/layoutmain :: head}"></head>
 <body>
-	<div th:replace="layout/layoutprod :: header"></div>
+	<div th:replace="	~{layout/layoutprod :: header}"></div>
 	<div class="mr-5 ml-5">
 		<div class="row">
 			<div class="col-sm-2"></div>
@@ -39,6 +39,6 @@
 			<div class="col-sm-2"></div>
 		</div>
 	</div>
-	<div th:replace="layout/layoutprod :: footer"></div>
+	<div th:replace="	~{layout/layoutprod :: footer}"></div>
 </body>
 </html>

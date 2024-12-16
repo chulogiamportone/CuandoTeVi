@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layout/layoutmain :: head"></head>
+<head th:replace="~{layout/layoutmain :: head}"></head>
 
 <body class="body">
 
-	<div th:replace="layout/layoutmain :: header"></div>
+	<div th:replace="	~{layout/layoutmain :: header}"></div>
 	<main>
 		<div class="mainclassp" id="producto">
 
 		</div>
 	</main>
-	<div th:replace="layout/layoutmain :: footer"></div>
+	<div th:replace="	~{layout/layoutmain :: footer}"></div>
 </body>
 <script th:src="@{../js/Productos.js}"></script>
 
