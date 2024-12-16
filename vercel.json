@@ -1,11 +1,8 @@
 {
   "builds": [
     {
-      "src": "/",
-      "use": "@vercel/build-spring-boot",
-      "config": {
-        "mainClass": "gc._4.pr2.grupo1.Grupo1Application"
-      }
+      "src": "target/*.jar",
+      "use": "@vercel/java"
     }
   ]
 }
